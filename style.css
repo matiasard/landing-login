@@ -1,3 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #fffffe;
+  --secondary: #72757e;
+  --background-color: #16161a;
+  --button: #7147f0;
+  --buttom-text-primary: #242629;
+	--button-text-secondaty: #fffffe:
+  --paragraph: #94a1b2;
+  --titular: #242629;
+
+  --card-background: #fafafa;
+  --card-text: #242629;
+
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
+  margin: 0;
+  /* background-color: var(--main-color); */
+  background-image: url('./assets/doodad.png');
+  /* background-size: cover; */
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.row-2 {
+  width: 380px;
+  min-height: 500px;
+  background-color: var(--card-background);
+}
+
+.login-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.login-head picture {
+	margin-top: 32px;
+}
+
+.login-head h1 {
+  color: var(--titular);
+}
+
+/* ****** Form  *******/
+
+.login-body {
+  margin-top: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.form-row:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+input {
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* margin: 0 20px; */
+  /* box-sizing: border-box; */
+}
+
+input:focus {
+  outline: solid 2px rgb(0, 153, 255);
+}
+
+.btn {
+  background-color: var(--button);
+  color: var(--button-text-secondaty);
+	transition: all 0.23s ease;
+}
+
+.btn:hover{
+	background-color: #5c2de7;
+}
+
+.btn-submit {
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  height: 50px;
+  font-weight: 800;
+}
+
+.form-footer {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-option {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  color: var(--buttom-text-primary);
+}
+
+.password-option:hover{
+	outline: 1px solid rgb(78, 78, 78)
+}
+.register {
+  font-size: 1rem;
+  height: 60px;
+  color: var(--card-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register a {
+  color: #2cb66a;
+	text-decoration: none;
+}
+
+.register a:hover{
+	color: #07a54e;
 }
